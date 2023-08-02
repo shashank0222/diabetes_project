@@ -10,7 +10,7 @@ application = Flask(__name__)
 app = application
 
 scaler = pickle.load(open("Model/standardScaler.pkl" , "rb"))
-model = pickle.load(open("Model/modelForPrediction.pkl" , "rb"))
+model = pickle.load(open("Model/svcModelForPrediction.pkl" , "rb"))
 
 @app.route("/")
 def index():
